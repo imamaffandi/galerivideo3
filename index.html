@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Harmoni Bintang</title>
+    <link rel="icon" href="/icons/kemdikbud.webp" type="image/x-icon" />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="relative px-5 min-h-screen w-full font-sans bg-fixed bg-no-repeat bg-center before:content-[''] before:fixed before:top-0 before:left-0 before:w-full before:h-screen before:bg-[url('/background/bg.jpg')] before:bg-cover before:bg-center before:opacity-10 before:-z-10"
+  >
+    <section
+      class="flex flex-col items-center justify-center text-center gap-2"
+    >
+      <nav class="w-full flex justify-between items-center gap-4">
+        <div class="w-1/2 sm:w-80 flex gap-4 items-center">
+          <img
+            src="/icons/kemendikbud.svg"
+            alt="Kemendikbud"
+            class="w-72"
+          /><img src="/icons/mitj.webp" alt="MITJ" class="w-40" />
+        </div>
+        <img src="/icons/80.webp" alt="80 Tahun" class="w-56" />
+      </nav>
+      <div class="flex flex-col items-center gap-2 w-full">
+        <img
+          src="/icons/harmoni.webp"
+          alt="Harmoni Bintang"
+          class="h-80 mb-16 w-full object-contain"
+        />
+        <h1
+          class="text-5xl md:text-7xl mb-10 font-black text-[#d62828] drop-shadow-sm"
+        >
+          TV Galaksi Karya
+        </h1>
+      </div>
+    </section>
+    <div class="video-wrapper sm:my-10 h-full overflow-hidden relative w-full">
+      <div
+        id="videoSlider"
+        class="grid grid-cols-3 transition-transform duration-300 ease-in-out will-change-transform"
+      ></div>
+    </div>
+    <div
+      id="videoModal"
+      class="fixed inset-0 z-[999] bg-black/60 backdrop-blur-md hidden items-center justify-center"
+    >
+      <div class="bg-black p-5 rounded-lg relative w-[90%] max-w-[800px]">
+        <button
+          class="absolute -top-3 -right-3 bg-white text-black text-xl px-3 py-1 rounded-full cursor-pointer close"
+        >
+          &times;</button
+        ><video id="videoPlayer" class="w-full rounded-lg" controls></video>
+      </div>
+    </div>
+    <img
+      src="/icons/right.png"
+      class="object-contain h-72 absolute -left-2 -bottom-2 opacity-50"
+      alt
+    /><img
+      src="/icons/left.png"
+      class="object-contain h-72 absolute -right-2 -bottom-2 opacity-50"
+      alt
+    />
+    <footer
+      class="w-full flex items-start justify-center gap-5 z-0 absolute bottom-2"
+    >
+      <img
+        src="/icons/pendidikan.webp"
+        alt="pendidikan"
+        class="h-40 object-contain"
+      /><img src="/icons/ramah.webp" alt="ramah" class="h-40 object-contain" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
